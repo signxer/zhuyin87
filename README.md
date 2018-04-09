@@ -8,7 +8,7 @@
 
 ## 简介
 
-### **[在线演示](https://o8b.club/87zy/)**
+### **[在线演示](https://signxer.github.io/zhuyin87/src/)**
 
 **「捌柒注音」** 只为满足一个情景而生：
 
