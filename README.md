@@ -13,6 +13,8 @@
 
 由于一般完成这一「转换」过程的工具通常为手机，所以网页专门做成了 Web App 的形式，例如 iOS 可以通过「添加到主屏幕」，方便快捷使用。
 
+[在线Demo](https://o8b.club/87zy/)
+
 本项目大部分代码魔改自[sxei/pinyinjs](https://github.com/sxei/pinyinjs)，自制了两个词典，如下：
 
 ### Unicode到注音词典
@@ -34,17 +36,34 @@
 ## 功能
 通过以上两张表，就可以达成以下功能：
 
-### 汉字转注音(带音调)
+### 汉字转注音(带声调)
 ```javascript
 pinyinUtil.getPinyin('捌柒注音'); //输出 ㄅㄚˉ ㄑㄧˉ ㄓㄨˋ ㄧㄣˉ
 ```
 
-### 注音转键位(英文)
+### 注音转键位(英文表示)
 ```javascript
 Zhuyin2Keyboard('ㄅㄚˉ ㄑㄧˉ ㄓㄨˋ ㄧㄣˉ'); //输出 18 fu 5j4 up
 ```
 
-### 注音转拼音(带音调)
+### 注音转拼音(带声调)
 ```javascript
 Zhuyin2Pinyin('ㄅㄚˉ ㄑㄧˉ ㄓㄨˋ ㄧㄣˉ'); //输出 bā qī zhù yīn
+```
+
+### 注音键盘转拼音(带声调)
+```javascript
+Keyboard2Pinyin('18 fu 5j4 up'); //输出 bā qī zhù yīn
+```
+
+所以通过以上几个函数，经过组合，还可以得到更多的转换：
+
+### 汉字转键位(英文表示)
+```javascript
+Zhuyin2Pinyin(pinyinUtil.getPinyin('捌柒注音')); //输出 bā qī zhù yīn
+```
+
+### 汉字转拼音(带声调)
+```javascript
+Zhuyin2Pinyin(pinyinUtil.getPinyin('捌柒注音')); //输出 bā qī zhù yīn
 ```
