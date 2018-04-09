@@ -24,7 +24,7 @@
 
 ## 使用
 同[sxei/pinyinjs](https://github.com/sxei/pinyinjs)一样，只需要引用即可。
-```
+```html
 <script type="text/javascript" src="dict/pinyin_dict_notone.js"></script>
 <script type="text/javascript" src="dict/pinyin_dict_withtone.js"></script>
 <script type="text/javascript" src="pinyinUtil.js"></script>
@@ -48,4 +48,3 @@ Zhuyin2Keyboard('ㄅㄚˉ ㄑㄧˉ ㄓㄨˋ ㄧㄣˉ'); //输出 18 fu 5j4 up
 ```javascript
 Zhuyin2Pinyin('ㄅㄚˉ ㄑㄧˉ ㄓㄨˋ ㄧㄣˉ'); //输出 bā qī zhù yīn
 ```
-
