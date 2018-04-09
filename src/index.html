@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="zh">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no , user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="description" content="注音输入的「曲线救国」解决方案">
+    <meta name="author" content="Livrestrela">
+
+	<!-- generics -->
+	<link rel="icon" href="./icons/32x32.png" sizes="32x32">
+	<link rel="icon" href="./icons/57x57.png" sizes="57x57">
+	<link rel="icon" href="./icons/76x76.png" sizes="76x76">
+	<link rel="icon" href="./icons/96x96.png" sizes="96x96">
+	<link rel="icon" href="./icons/128x128.png" sizes="128x128">
+	<link rel="icon" href="./icons/228x228.png" sizes="228x228">
+
+	<!-- Android -->
+	<link rel="shortcut icon" sizes="196x196" href="./icons/196x196.png">
+
+	<!-- iOS -->
+	<link rel="apple-touch-icon" href="./icons/120x120.png" sizes="120x120">
+	<link rel="apple-touch-icon" href="./icons/152x152.png" sizes="152x152">
+	<link rel="apple-touch-icon" href="./icons/180x180.png" sizes="180x180">
+
+	<!-- Windows 8 IE 10-->
+	<meta name="msapplication-TileColor" content="#940115">
+	<meta name="msapplication-TileImage" content="./icons/144x144.png">
+
+	<!-- Windows 8.1 + IE11 and above -->
+	<meta name="msapplication-config" content="./icons/browserconfig.xml" />
+
+    <title>捌柒注音</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/signin.css" rel="stylesheet">
+    <link href="css/radio.css" rel="stylesheet">
+    
+    
+    <!-- Custom styles for this template -->
+    <script type="text/javascript" src="dict/pinyin_dict_notone.js"></script>
+    <script type="text/javascript" src="dict/pinyin_dict_withtone.js"></script>
+    <script type="text/javascript" src="pinyinUtil.js"></script>
+    <script type="text/javascript" src="zhuyinUtil.js"></script>
+  </head>
+
+  <body class="text-center">
+    <form class="form-signin">
+      <img class="mb-4" src="./icons/icon.svg" alt="" width="72" height="72">
+      	<h1 class="h3 mb-3 font-weight-normal">捌柒注音<span class="badge badge-pill badge-dark" style="font-size: 12px">Beta</span></h1>
+      	<p style="color: #940115;">注音输入的「曲线救国」解决方案</p>
+  	  <div class="input-bar">
+	      <div class="input-group input-group-lg">
+	        <input type="text" id="test" class="form-control" aria-label="请随便输入一些" aria-describedby="inputGroup-sizing-sm" placeholder="在这里输入你想要打的字">
+	      </div>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="pinyin_type" id="inlineRadio1" value="0">
+        <label class="form-check-label" for="inlineRadio1">汉字→注音</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="pinyin_type" id="inlineRadio2" value="1" checked>
+        <label class="form-check-label" for="inlineRadio2">汉字→注音键盘</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="pinyin_type" id="inlineRadio3" value="2">
+        <label class="form-check-label" for="inlineRadio3">注音→拼音</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="pinyin_type" id="inlineRadio4" value="3">
+        <label class="form-check-label" for="inlineRadio4">注音键盘→拼音</label>
+      </div>
+      <div class="card result">
+      	<div class="card-body">
+      	<h1 class="h3 mb-3 font-weight-normal"><div id="result"></div></h1>
+      	</div>
+  	  </div>
+  	  <div class="foot">
+      <p class="mt-5 mb-3 text-muted"><hr>Made by Livrestrela <br>&copy; 2018</p>
+  	  </div>
+    </form>
+    <script type="text/javascript" src="main.js"></script>
+  </body>
