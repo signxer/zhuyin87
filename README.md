@@ -61,7 +61,7 @@ Keyboard2Pinyin('18 fu 5j4 up'); //输出 bā qī zhù yīn
 
 ### 汉字转键位(英文表示)
 ```javascript
-Zhuyin2Pinyin(pinyinUtil.getPinyin('捌柒注音')); //输出 bā qī zhù yīn
+Zhuyin2Pinyin(pinyinUtil.getPinyin('捌柒注音')); //输出 18 fu 5j4 up
 ```
 
 ### 汉字转拼音(带声调)
